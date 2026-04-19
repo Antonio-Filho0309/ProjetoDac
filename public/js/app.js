@@ -48,7 +48,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     .then((data) => {
       if (data.success) {
         // ✅ AQUI FAZ IR PRA INDEX
-        window.location.href = "index.html";
+        window.location.href = "pessoas.html";
       } else {
         alert("Usuário ou senha inválidos");
       }
