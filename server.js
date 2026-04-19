@@ -10,6 +10,10 @@ app.use(express.static("public"));
 // const usuarioRoutes = require("./routes/usuario");
 // app.use("/", usuarioRoutes);
 
+app.get("/", (req, res) => {
+  res.send("API funcionando 🚀");
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
