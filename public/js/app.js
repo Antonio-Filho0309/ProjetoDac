@@ -8,7 +8,7 @@ document.getElementById("classForm").addEventListener("submit", function (e) {
   const senha = document.getElementById("senha").value;
 
   // envia pro backend
-  fetch("http://localhost:3000/usuarios", {
+  fetch("https://seu-projeto.onrender.com/index", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -37,7 +37,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const login = document.getElementById("name").value;
   const senha = document.getElementById("password").value;
 
-  fetch("http://localhost:3000/login", {
+  fetch("http://localhost:3000/index", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
