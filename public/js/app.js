@@ -37,7 +37,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const login = document.getElementById("name").value;
   const senha = document.getElementById("password").value;
 
-  fetch("http://localhost:3000/index", {
+  fetch("https://seu-projeto.onrender.com/index", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
