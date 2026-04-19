@@ -8,7 +8,7 @@ document.getElementById("classForm").addEventListener("submit", function (e) {
   const senha = document.getElementById("senha").value;
 
   // envia pro backend
-  fetch("https://projetodac.onrender.com/cadastro", {
+  fetch("https://projetodac.onrender.com/usuarios", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

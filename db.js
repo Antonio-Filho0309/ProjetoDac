@@ -1,20 +1,16 @@
 const mysql = require("mysql2");
 
-const connection = mysql.createConnection({
+const connection = mysql.createPool({
   host: "autorack.proxy.rlwy.net",
   user: "root",
   password: "AgzvvfUZMwHzJPLmLxpAivLqsXYPZqot",
   database: "contas_a_pagar",
   port: 28434,
-  rejectUnauthorized: false
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
 });
 
-connection.connect((err) => {
-  if (err) {
-    console.error("Erro ao conectar:", err);
-  } else {
-    console.log("Conectado ao Railway 🚀");
-  }
-});
+console.log("Pool de conexões criado 🚀");
 
 module.exports = connection;
