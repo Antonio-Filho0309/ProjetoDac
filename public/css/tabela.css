@@ -56,3 +56,9 @@ a.btn-new{
 #bt2:hover{
     background-color: rgb(253, 0, 0);
 }
+
+
+tr:hover {
+    background-color: #333333 !important; /* Um cinza escuro */
+    transition: 0.3s;
+}

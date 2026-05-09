@@ -8,7 +8,9 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const usuarioRoutes = require("./routes/usuario");
+const pessoasRoutes = require("./routes/pessoas");
  app.use("/", usuarioRoutes);
+ app.use("/", pessoasRoutes);
 
 
 const PORT = process.env.PORT || 3000;
