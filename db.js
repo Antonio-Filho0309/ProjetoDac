@@ -1,11 +1,11 @@
 const mysql = require("mysql2");
 
 const connection = mysql.createPool({
-  host: "autorack.proxy.rlwy.net",
+  host: "switchyard.proxy.rlwy.net",
   user: "root",
-  password: "AgzvvfUZMwHzJPLmLxpAivLqsXYPZqot",
+  password: "nsvpmMcQGkKyZjpJtzUcPOzbTyjOzNEL",
   database: "contas_a_pagar",
-  port: 28434,
+  port: 23264,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
